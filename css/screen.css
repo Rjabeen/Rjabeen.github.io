@@ -17,9 +17,42 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+ font-size:1.125em; /*18/16 = 1.125*/
+ line-height: 1.222em; /*22/18 = 1.222222*/
+}
+h1{
+  /*background-color: #AFAFAF;*/
+  margin-top: 100px;
+}
+nav li{
+  float: left;
+  width:33.333%;
+  background-color: #AFAFAF;
 
 }
-
+nav a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding-bottom:50px;
+  text-align: center;
+}
+nav{
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width:400px){
+  body{
+    background-color: #33FFE3;
+  }
+}
+@media screen and (max-width:400px){
+  body{
+    background-color: #33FF9C;
+  }
+}
 /* Responsive Media */
 img,
 video,
