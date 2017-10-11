@@ -20,6 +20,11 @@ html {
  font-size:1.125em; /*18/16 = 1.125*/
  line-height: 1.222em; /*22/18 = 1.222222*/
 }
+body{
+  padding-top: 3.666em;    /*18 / 16 = 1.125 */
+  padding-right: 1.222em;  /* 22 / 18 = 1.2em */
+  padding-left: 1.222em;  /* 22 / 18 = 1.2em*/
+}
 h1{
   /*background-color: #AFAFAF;*/
   margin-top: 100px;
