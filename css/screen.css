@@ -34,7 +34,26 @@ ol,ul
 {
     padding-bottom: 1.222em; /* 22 / 18 = 0.61~ */
 }
+ol{
+  list-style-type: circle;
+}
+ul
+{
+  list-style-type: none;
+}
 
+li ol,
+li ul {
+
+  padding-top: 0.611em;   /* 11 / 18 = 0.61~ */
+  padding-left: 1.222em;  /* 22 / 18 = 1.2~ */
+  padding-bottom: 0;
+}
+
+li ol
+{
+  list-style-type: roman;
+}
 nav li{
   float: left;
   width:33.333%;
@@ -48,6 +67,7 @@ nav a{
   padding-bottom:50px;
   text-align: center;
 }
+
 nav{
   position:absolute;
   width: 100%;
@@ -57,6 +77,8 @@ nav{
 @media screen and (min-width:400px){
   body{
     background-color: #33FFE3;
+    padding-right: 12.75%; /* 51 / 400 = 12.75~% */
+    padding-left: 12.75%; /* 51/ 400 = 12.75~% */
   }
 }
 @media screen and (max-width:400px){
