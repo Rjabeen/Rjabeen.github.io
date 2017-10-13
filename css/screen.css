@@ -16,32 +16,92 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
-html {
+html  {
  font-size:1.125em; /*18/16 = 1.125*/
  line-height: 1.222em; /*22/18 = 1.222222*/
+ font-family: serif, helvetica, arial, sans-serif;
+ background-color: #33FFE3;
 }
-body{
-  padding-top: 1.2222em;    /*22/ 16 = 1.125 */
+
+body {
+  padding-top: 1.125em;    /*22/ 16 = 1.125 */
   padding-right: 1.2222em;  /* 22 / 18 = 1.2em */
   padding-left: 1.2222em;  /* 22 / 18 = 1.2em*/
 }
-h1, h2{
-  /*background-color: #AFAFAF;*/
+
+nav {
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding-bottom:50px;
+  padding-top: 1.6111em;
+  padding-bottom: 0.6111em;
+  text-align: center;
+
+}
+
+nav li {
+  float: left;
+  width:33.333%;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding-bottom: 1.222em;
+}
+
+h1 {
+  text-align: left;
   margin-top: 50px;
-  padding-bottom: none;
+  padding-bottom: 0.6111em;
   /*padding-bottom: 0.61111em;  /* 11/ 18 = 1.2em*/
+  font-style: italic;
+  font-size: 2.222em;
+  line-height: 1.032em;
+  padding-bottom: 0.516em;
+}
+
+h2 {
+  text-align:left;
+  font-style:oblique;
+  font-size: 1.777em;
+  line-height: 1.032em;
+  padding-bottom: 0.688em;
+}
+
+h3 {
+  font-family: serif, helvetica, arial, sans-serif;
+  font-variant: normal;
+  font-weight: bolder;
+   text-decoration-style: solid;
+}
+
+p {
+  text-indent: 20px;
 }
 
 ol,ul
 {
     padding-bottom: 1.222em; /* 22 / 18 = 0.61~ */
 }
+
 ol{
   list-style-type: circle;
 }
-ul
+
+ li ol
 {
-  list-style-type: none;
+  list-style-type: disc;
 }
 
 li ol,
@@ -52,60 +112,41 @@ li ul {
   padding-bottom: 0;
 }
 
-li ol
-{
-  list-style-type: roman;
-}
-nav li{
-  float: left;
-  width:33.333%;
-  background-color: #AFAFAF;
 
-}
-nav a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  padding-bottom:50px;
-  padding-top: 1.6111em;
-  padding-bottom: 0.6111em;
-  text-align: center;
-}
 
-nav {
-  position:absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.flexbox #nav ul{
-  display: flex;
-}
-.flexbox #nav li {
-  float: none;
-}
-
-@media screen and (min-width:400px) {
-  body {
-    background-color: #33FFE3;
-    padding-right: 12.75%; /* 51 / 400 = 12.75~% */
-    padding-left: 12.75%; /* 51/ 400 = 12.75~% */
+@media screen and (min-width:640px) {
+  html {
+    /*background-color: #33FFE3;
+    /*padding-right: 12.75%; /* 51 / 400 = 12.75~% */
+    /*padding-left: 12.75%; /* 51/ 400 = 12.75~% */
+     font-size: 1.25em;
   }
 }
-@media screen and (max-width:400px) {
+
+@media screen and (min-width:860px) {
   body {
+
     background-color: #33FF9C;
+    padding-left: 9.302325581%;
+    padding-right: 9.30233581%;
+
   }
 }
 /* Responsive Media */
 img,
 video,
 audio {
+  padding-top: 1.125em;
   display: block;
   max-width: 100%;
 }
 
+#navigation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /* Layout Styles */
 /*
   Hint: these tend to be
