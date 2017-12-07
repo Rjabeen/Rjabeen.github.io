@@ -209,7 +209,7 @@ nav li {
   }
 
   .slide:nth-of-type(2) {
-  	background-color: white;
+  	background-color: green;
     background-image: url('http://www.hustlermoneyblog.com/wp-content/uploads/2017/05/Chicago-IL.jpg');
   }
 
@@ -223,7 +223,7 @@ nav li {
 }
 
 .slide:nth-of-type(5) {
-    background: grey;
+    background: yellow;
 }
 
 /* If  the user does not have JavaScript, here is the fall back*/
