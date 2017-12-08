@@ -60,7 +60,7 @@ var pauseButton = document.getElementBy('pause');
      pauseSlideshow();
      nextSlide();
  };
-
+ 
  previous.onclick = function() {
      pauseSlideshow();
      previousSlide();
